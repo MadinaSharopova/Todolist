@@ -17,13 +17,6 @@ export default function Context({ children }) {
     })
 
     useEffect(() => {
-        //   let token = localStorage.getItem("TOKEN")
-        //   if(token) {
-        //       setAuth((p) => ({
-        //           ...p,
-        //           isAuth:true,
-        //       }))
-        //   }
         userme()
     }, [])
 
