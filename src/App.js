@@ -8,7 +8,9 @@ import Todo from './pages/Todo'
 import { MyContext } from './context/Context'
 import Loading from './components/Loading'
 
+
 export default function App() {
+  
   const {
     state: {
       auth: { isAuth, loading },
@@ -31,5 +33,6 @@ export default function App() {
       <Route path='/register' element={<Register />} />
       <Route path='*' element={<Navigate to='/login' />} />
     </Routes>
+  
   )
 }

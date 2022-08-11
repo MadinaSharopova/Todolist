@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import 'react-toastify/dist/ReactToastify.css'
 import './style.css'
 import Context from './context/Context'
+import type from './type'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
         <ToastContainer />
         <Context>
             <App />
+          
         </Context>
 
     </BrowserRouter>
